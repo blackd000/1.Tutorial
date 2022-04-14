@@ -27,6 +27,5 @@ public class LambdaExpression {
 		 * (arguments) -> {statement/s}
 		 */
 
-    System.out.println("hello world");
   }
 }
