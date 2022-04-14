@@ -1,6 +1,6 @@
 package learning.enum1;
 
-import javax.swing.JFrame;
+//import javax.swing.JFrame;
 
 enum Planet {
   MERCURY(1), 
