@@ -4,7 +4,7 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 
 import java.awt.FlowLayout;
-import java.awt.event.ActionListener;
+//import java.awt.event.ActionListener; // no need
 
 public class LambdaFrame extends JFrame {
 
