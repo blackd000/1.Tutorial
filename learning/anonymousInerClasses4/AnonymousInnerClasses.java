@@ -29,5 +29,6 @@ public class AnonymousInnerClasses {
     // greeting2.welcome();
 
     new MyFrame();
+    System.out.println("Hello");
   }
 }
