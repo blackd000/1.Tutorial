@@ -44,6 +44,10 @@ public class Bai1Frame extends JFrame {
 
     JButton searchButton = new JButton("Search");
     searchButton.setFont(mainFont);
+    searchButton.addActionListener((e) -> {
+      officerManager.searchOfficer(searchText.getText());
+      searchText.setText("");
+    });
 
     /****************/ 
     JLabel displayLabel = new JLabel("Display officer");
