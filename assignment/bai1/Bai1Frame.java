@@ -1,9 +1,9 @@
 package assignment.bai1;
 
-import java.awt.Font;
-import java.awt.GridLayout;
 import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.Font;
+import java.awt.GridLayout;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -15,7 +15,7 @@ import javax.swing.SwingConstants;
 public class Bai1Frame extends JFrame {
   final private Font mainFont = new Font("segoe print", Font.BOLD, 15);
 
-  public Bai1Frame() {
+  public Bai1Frame(OfficerManager officerManager) {
 
     /****************** Form Panel ******************/
     JLabel officerForm = new JLabel("Officer Form", SwingConstants.CENTER);
@@ -30,7 +30,8 @@ public class Bai1Frame extends JFrame {
     JButton addButton = new JButton("Add");
     addButton.setFont(mainFont);
     addButton.addActionListener((e) -> {
-      
+      new AddOfficer(officerManager);
+      this.dispose();
     });
 
     /****************/ 
@@ -51,6 +52,9 @@ public class Bai1Frame extends JFrame {
 
     JButton displayButton = new JButton("Display");
     displayButton.setFont(mainFont);
+    displayButton.addActionListener((e) -> {
+      officerManager.displayOfficer();
+    });
 
     /****************/ 
     JPanel panel0 = new JPanel();
@@ -63,10 +67,6 @@ public class Bai1Frame extends JFrame {
     panel0.add(searchButton);
     panel0.add(displayLabel);
     panel0.add(displayButton);
-
-
-    /****************** Form Frame ******************/
-
 
 
     /****************** Form Frame ******************/

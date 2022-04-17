@@ -1,9 +1,9 @@
 package assignment.bai1;
 
 public class Worker extends Officer {
-  private byte rank;
+  private int rank;
 
-  public Worker(String name, short age, String gender, String address, byte rank) {
+  public Worker(String name, int age, String gender, String address, int rank) {
     super(name, age, gender, address);
     this.rank = rank;
   }

@@ -3,7 +3,7 @@ package assignment.bai1;
 public class Employee extends Officer {
   private String work;
 
-  public Employee(String name, short age, String gender, String address, String work) {
+  public Employee(String name, int age, String gender, String address, String work) {
     super(name, age, gender, address);
     this.work = work;
   }
