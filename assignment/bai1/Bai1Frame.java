@@ -77,6 +77,7 @@ public class Bai1Frame extends JFrame {
     this.add(panel0, BorderLayout.NORTH);
 
     this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    this.setTitle("Officer Application");
     this.setSize(500, 700);
     //this.setMinimumSize(new Dimension(350, 450));
     this.setLocationRelativeTo(null);
