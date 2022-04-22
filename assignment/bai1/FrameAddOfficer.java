@@ -158,7 +158,7 @@ public class FrameAddOfficer extends JFrame {
 
     try {
       if(who.equals("worker")) {
-        officer = new Worker(nameText.getText(), Integer.parseInt(rankText.getText()), genderText.getText(), addressText.getText(), Integer.parseInt(rankText.getText()));
+        officer = new Worker(nameText.getText(), Integer.parseInt(ageText.getText()), genderText.getText(), addressText.getText(), Integer.parseInt(rankText.getText()));
       } else if(who.equals("engineer")) {
         officer = new Engineer(nameText.getText(), Integer.parseInt(ageText.getText()), genderText.getText(), addressText.getText(), branchText.getText());
       } else if(who.equals("employee")) {
